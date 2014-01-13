@@ -1,22 +1,28 @@
 {
-    "name": "smart-queue/init",
-    "description": "Init poroject.",
+    "name": "smart-queue/smartq-repository",
+    "description": "Composer project repository.",
+    "license": "MIT",
+    "type":"library",
+
     "repositories": {
-        "smartq-repository": {
+        "less": {
             "type": "package",
             "package": {
-                "name": "smart-queue/smartq-repository",
+                "name": "fac/less",
                 "version": "dev",
+
                 "source": {
-                    "url": "git://github.com/cloudhead/smartq-repository.git",
+                    "url": "git://github.com/cloudhead/less.js.git",
                     "type": "git",
                     "reference": "master"
                 }
             }
         }
     },
+
     "requere": {
         "php": ">=5.3.0",
-        "smart-queue/smartq-repository": "dev"
+        "pimple/pimple": "1.*",
+        "fac/less" : "dev"
     }
-} 
+}
