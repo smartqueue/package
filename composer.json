@@ -12,7 +12,7 @@
                 "source": {
                     "url": "git://github.com/cloudhead/less.js.git",
                     "type": "git",
-                    "reference": "develop"
+                    "reference": "master"
                 }
             }
         }
@@ -22,7 +22,7 @@
     },
         "extra": {
         "branch-alias": {
-            "dev-master": "develop"
+            "dev-master": "master"
         }
     }
 }
