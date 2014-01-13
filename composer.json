@@ -1,0 +1,28 @@
+{
+    "name": "smart-queue/init",
+    "description": "Init project directory.",
+    "license": "MIT",
+    "type":"library",
+    "repositories": {
+        "less": {
+            "type": "package",
+            "package": {
+                "name": "faclib/less",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/cloudhead/less.js.git",
+                    "type": "git",
+                    "reference": "develop"
+                }
+            }
+        }
+    },
+    "require": {
+        "faclib/less" : "dev-master"
+    },
+        "extra": {
+        "branch-alias": {
+            "dev-master": "develop"
+        }
+    }
+}
