@@ -1,0 +1,28 @@
+{
+    "name": "fac/faclib",
+    "description": "Composer project shortcut with .. for your vendor directory.",
+    "license": "MIT",
+    "type":"library",
+
+    "repositories": {
+        "less": {
+            "type": "package",
+            "package": {
+                "name": "fac/less",
+                "version": "dev",
+
+                "source": {
+                    "url": "git://github.com/cloudhead/less.js.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    },
+
+    "requere": {
+        "php": ">=5.3.0",
+        "pimple/pimple": "1.*",
+        "fac/less" : "dev"
+    }
+}
