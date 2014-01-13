@@ -1,4 +1,0 @@
-init
-====
-
-Init project
