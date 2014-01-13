@@ -19,5 +19,10 @@
     },
     "require": {
         "faclib/less" : "dev-master"
+    },
+        "extra": {
+        "branch-alias": {
+            "dev-master": "develop"
+        }
     }
 }
