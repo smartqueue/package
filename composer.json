@@ -4,58 +4,10 @@
     "license": "MIT",
     "type":"library",
 
-    "repositories": {
-        "slim": {
-            "type": "package",
-            "package": {
-                "name": "faclib/slim",
-                "version": "dev",
-
-                "source": {
-                    "url": "git://github.com/faclib/Slim.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        },
-        "smarty": {
-            "type": "package",
-            "package": {
-                "name": "faclib/smarty",
-                "version": "dev",
-
-                "source": {
-                    "url": "git://github.com/faclib/Smarty.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        },
-
-        "less": {
-            "type": "package",
-            "package": {
-                "name": "fac/less",
-                "version": "dev",
-
-                "source": {
-                    "url": "git://github.com/cloudhead/less.js.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    },
     "require": {
-        "php": ">=5.4.0",
-        "faclib/slim":"dev",
-        "faclib/smarty":"dev"
-    },
-
-    "require-dev": {
+        "mockery/mockery": "dev-master@dev",
         "php-console/php-console" : "dev-master",
-        "phpunit/phpunit": "3.7.*",
-        "psr/log": "dev-master",
-        "mockery/mockery": "dev-master@dev"
+        "pimple/pimple": "1.*",
+        "psr/log": "dev-master"
     }
 }
