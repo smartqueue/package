@@ -1,10 +1,37 @@
 {
-    "name": "smart-queue/smartq-repository",
+    "name": "smart-queue/package",
     "description": "Composer project repository.",
     "license": "MIT",
     "type":"library",
 
     "repositories": {
+        "slim": {
+            "type": "package",
+            "package": {
+                "name": "faclib/slim",
+                "version": "dev",
+
+                "source": {
+                    "url": "git://github.com/faclib/Slim.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "smarty": {
+            "type": "package",
+            "package": {
+                "name": "faclib/smarty",
+                "version": "dev",
+
+                "source": {
+                    "url": "git://github.com/faclib/Smarty.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+
         "less": {
             "type": "package",
             "package": {
@@ -19,10 +46,16 @@
             }
         }
     },
+    "require": {
+        "php": ">=5.4.0",
+        "faclib/slim":"dev",
+        "faclib/smarty":"dev"
+    },
 
-    "requere": {
-        "php": ">=5.3.0",
-        "pimple/pimple": "1.*",
-        "fac/less" : "dev"
+    "require-dev": {
+        "php-console/php-console" : "dev-master",
+        "phpunit/phpunit": "3.7.*",
+        "psr/log": "dev-master",
+        "mockery/mockery": "dev-master@dev"
     }
 }
